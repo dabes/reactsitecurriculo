@@ -1,0 +1,138 @@
+@import './timeline.css';
+
+.disabled {
+    cursor: default;
+    pointer-events: none;
+}
+
+.ellipsis {
+    max-width: 400px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.rounded-circle-border {
+    border: 5px solid white;
+    box-shadow: 1px 8px 4px 0px  #ccc;
+    position:absolute;
+    top: -130px;
+    width: 260px;
+    height: 260px;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.font-bolder {
+    font-weight: bolder;
+}
+
+.center {
+    align-items: center;
+    justify-items: center;
+}
+
+.left {
+    align-self: self-start;
+}
+
+.card-top-spacing-200 {
+    padding-top: 200px;
+}
+
+.top-card-primary-blue {
+    min-height: 200px; 
+    background-color: #09c;
+}
+
+.social-media-top-right {
+    float:right; 
+    padding-top: 15px;
+}
+
+.icon-white {
+    fill: white;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.CV {
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+    text-align: center;
+  }
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+    padding: 0;
+}
+
+.clear {
+    height: 10px;
+    width: 100%;
+}
+
+.bmd-form-group {
+    text-align: left;
+}
+@media print{
+    .info, .formacao {
+        padding: unset;
+    }
+    @page 
+    {
+        margin: 10mm;  /* this affects the margin in the printer settings */
+    }
+    .nome-print {
+        display: block !important;
+    }
+
+    .img-print {
+        display: unset !important;
+        width: 33px;
+        height: 33px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        margin: unset;
+        text-align: justify;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-align:  justify;
+        border-bottom: 1px solid black;
+    }
+    body{ 
+        background-color: white;
+    }
+    .progress-bar {
+        background-color: black;
+    }
+}
+
+
+@media (max-width: 750px){
+    .info {
+        padding-bottom: 50px;
+    }
+}
